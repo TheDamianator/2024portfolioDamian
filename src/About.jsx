@@ -43,7 +43,7 @@ export default function About() {
                 <div className="bg-secondarygreen h-screen font-custom font-bold flex justify-center items-center relative">
                     <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-center items-center">
                         <div className="font-display text-left px-8 max-w-md">
-                            <p className="text-8xl  text-lightertext mb-12">ABOUT ME</p>
+                            <p className="text-7xl  text-lightertext mb-12">ABOUT ME</p>
                             <div className="mb-6">
                                 <p className="text-m text-lightertext mb-6">Welcome to my portfolio! I'm passionate about crafting exceptional web experiences that not only look stunning but also deliver seamless functionality. Below, you'll find a showcase of my expertise, my coding and the design tools I use to sculpt great experiences.</p>
                             </div>

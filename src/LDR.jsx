@@ -8,6 +8,8 @@ import demoday from "./assets/projects/demoday.png";
 import ldrscreen from "./assets/projects/ldrscreen.png";
 import ldrscreen2 from "./assets/projects/ldrscreen2.png";
 import ldrscreen3 from "./assets/projects/ldrscreen3.png";
+import ldrend1 from "./assets/projects/ldrend1.png";
+import ldrend2 from "./assets/projects/ldrend2.png";
 
 export default function LDR() {
     const processSteps = [
@@ -67,7 +69,19 @@ export default function LDR() {
                     <br />
                     
                     As teachers and students immersed themselves in the interactive narrative, their enjoyment and engagement underscored the project's success. Their enthusiastic participation not only validated the concept but also highlighted its potential to resonate with a broader audience. Through this collaborative exploration, the project emerged as a compelling tool for fostering understanding and empathy in the realm of long-distance relationships.
-                    <br />
+                    <br /><br />
+                    It was especially fun to see the different endings that each participant got, and how they reacted to the story. It was a great way to end the minor and I'm proud of the result. Feel free to check out the design of the project on Figma using the button on top of the page!
+                    
+                    <br></br>
+
+                    <div className="flex">
+                        <div>
+                            <img src={ldrend1} alt="Me" className="mr-2" />
+                        </div>
+                        <div>
+                            <img src={ldrend2} alt="Team" className="ml-2" />
+                        </div>
+                    </div>
                 </>
             ),
         }

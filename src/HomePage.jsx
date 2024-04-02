@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import LandingPage from "./LandingPage";
 import Projects from "./Projects";
 import Navigation from "./Navigation";
+// import { Fade } from "react-awesome-reveal";
 
 
 
@@ -12,12 +13,12 @@ import Navigation from "./Navigation";
         <>
 
                 <Navigation/>
-                
+                    
                 <LandingPage/>
                 <About/>
                 <Projects/>
                 <Contact/>
-         
+                
         </>
     );
 }

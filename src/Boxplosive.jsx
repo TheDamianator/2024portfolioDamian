@@ -3,6 +3,13 @@ import Projectcomponent from "./component/Projectcomponent";
 import boxplosiveheader from "./assets/boxplosiveheader.png"
 import BackNavigator from "./BackNavigator";
 
+//images
+import bpapplayout from "./assets/projects/bpapplayout.png"
+import bpleft from "./assets/projects/bpleft.png"
+import bpright from "./assets/projects/bpright.png"
+import testVideo from "./assets/projects/test.mp4"
+
+
 export default function Boxplosive() {
     const processSteps = [
         {
@@ -26,34 +33,29 @@ export default function Boxplosive() {
                     <br/><br/>
                     How can a new loyalty program app incorporating NFT rewards be created and designed to effectively engage the GenZ audience and make it accessible and appealing to them within the Boxplosive brand context?
 
+                    <br /><br />
+                    <img src={bpapplayout} alt="Kiosk layout" />
+                    <br />
+
                     <br/>
                     <span style={{ fontWeight: "bold", fontSize: "48px" }}>
                     The Solution
                     </span>
                     <br/>
-
-                     i still have to write this part
-                     but i will do it soon
-                     i promise
-                        i swear
-                        i will
-                        i will, why are you still reading this?
-                        i will do it soon, im just lazy right now
-                    why are you so interested in this part?
-                    theres nothing here.
-                    ok fine, i will write it soon
-                    but not now
-                    later
-                    ok?
-                    ok
-                    bye
-                    wait why are you still here? i said bye already
-                    ok fine, i will write it now
-                    i will, i promise, i swear, just give me a second
-                    ok?
-                    ok
-                    bye
-                    im having a hard time writing this part.... i dont want to write it now! i told.
+                    The solution unfolded through meticulous planning and execution across various phases. Extensive research laid the foundation, delving into user preferences and technical requirements. 
+                    <br/><br/>
+                    
+                    
+                    Collaborative design sessions brought clarity to project goals, iteratively refining concepts to align with stakeholder expectations. Development embraced agile methodologies, fostering adaptability and responsiveness to evolving needs. User testing provided invaluable insights, driving iterative enhancements to ensure a seamless user experience.
+                    <br/><br/>
+                    <div className="flex">
+                        <div>
+                            <img src={bpleft} alt="Bp" className="mr-2" />
+                        </div>
+                        <div>
+                            <img src={bpright} alt="Team" className="ml-2" />
+                        </div>
+                    </div>
                     <br/>
                     <span style={{ fontWeight: "bold", fontSize: "48px" }}>
                     The Video
@@ -64,6 +66,12 @@ export default function Boxplosive() {
 
                     This user flow is designed to ensure a smooth and intuitive experience for users as they establish their wallet within the app.  
 
+                    <video controls>
+                        <source src={testVideo} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <br />
                     <br/>
                     <span style={{ fontWeight: "bold", fontSize: "48px" }}>
                     The Conclusion
@@ -73,7 +81,7 @@ export default function Boxplosive() {
                     The NFT app provides a rewarding and engaging experience while catering to the preferences and interests of the GenZ audience. It may increase customer retention, draw in new clients, and encourage steadfast loyalty. By utilizing the app's features and advantages, Boxplosive can boost its brand recognition and position itself as a forward-thinking business that values its clients.
                     <br/><br/>
                     I recommended that the company should perform deeper research into the technical implementation of NFTs, such as blockchain platform selection, smart contract creation, and interaction with existing loyalty program systems.       
-             
+                   
                      </>
 
             ),

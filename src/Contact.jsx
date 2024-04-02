@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-// import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+import { Fade } from "react-awesome-reveal";
 
 
 export default function Contact() {
@@ -18,26 +17,25 @@ export default function Contact() {
         return () => clearInterval(interval);
     }, []);
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    };
+   
 
     return (
         <div id="contact" className="bg-secondarygreen min-h-screen font-custom font-bold flex flex-col justify-center items-center relative">
            
             <div className="text-center mb-8">
-                <h1 className="text-5xl sm:text-9xl text-lightertext mb-4">GET IN T<span className="white-text">O</span>UCH</h1>
-                <h2 className="text-4xl sm:text-6xl text-lightertext mb-4">Let's stay in C<span className="white-text">O</span>NTACT</h2>
+
+            <Fade fraction={0.1}>
+                <h1 className="text-5xl sm:text-9xl text-lightertext mb-4">GET IN TOUCH</h1>
+            </Fade>
+            <Fade fraction={0.1}>
+                <h2 className="text-4xl sm:text-6xl text-lightertext mb-4">Let's stay in CONTACT</h2>
+            </Fade>
                 <div className="text-left mb-8 flex flex-col items-center"> {/* Center vertically */}
-                    <a href="mailto:damiancaelen@gmail.com" className="text-lg sm:text-xl text-primarywhite mb-2">
-                        {/* <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> */}
+                    <a href="mailto:damiancaelen@gmail.com" className="text-lg sm:text-xl text-primarywhite mt-10 mb-2">
                         damiancaelen@gmail.com
                     </a> <br></br>
-                    <a href="https://linkedin.com/damiancaelen" className="text-lg sm:text-xl text-primarywhite hover:underline">
-                        {/* <FontAwesomeIcon icon={faLinkedin} className="mr-2" /> */}
+                    <a href="https://www.linkedin.com/in/damian-caelen-970a8a174/" className="text-lg mt-10 sm:text-xl text-primarywhite hover:underline">
+                     
                         linkedin.com/damiancaelen
                     </a>
                 </div>

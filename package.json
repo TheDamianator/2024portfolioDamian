@@ -10,11 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
     "adaptive-scroll": "^1.0.0",
     "grained": "^0.0.2",
     "react": "^18.2.0",
     "react-adaptive-scroll": "^1.0.0",
     "react-animated-cursor": "^2.11.2",
+    "react-awesome-reveal": "^4.2.8",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {

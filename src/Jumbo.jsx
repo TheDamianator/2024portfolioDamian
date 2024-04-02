@@ -1,6 +1,7 @@
 import React from "react";
 import Projectcomponent from "./component/Projectcomponent";
 import jumboheader from "./assets/jumboheader.png"
+import BackNavigator from "./BackNavigator";
 
 export default function Jumbo() {
     const processSteps = [
@@ -50,6 +51,7 @@ export default function Jumbo() {
     ]
     return (
         <div>
+            <BackNavigator />
             <Projectcomponent
                 title="Jumbo"
                 projectname="Whats for dinner?"

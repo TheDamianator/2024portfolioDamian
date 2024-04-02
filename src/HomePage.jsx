@@ -3,18 +3,21 @@ import About from "./About";
 import Contact from "./Contact";
 import LandingPage from "./LandingPage";
 import Projects from "./Projects";
-// import { Fade } from 'react-reveal';
+import Navigation from "./Navigation";
+
 
 
  function HomePage() {
     return(
         <>
-            {/* <Fade left> */}
+
+                <Navigation/>
+                
                 <LandingPage/>
                 <About/>
                 <Projects/>
                 <Contact/>
-            {/* </Fade> */}
+         
         </>
     );
 }

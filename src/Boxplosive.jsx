@@ -1,6 +1,7 @@
 import React from "react";
 import Projectcomponent from "./component/Projectcomponent";
 import boxplosiveheader from "./assets/boxplosiveheader.png"
+import BackNavigator from "./BackNavigator";
 
 export default function Boxplosive() {
     const processSteps = [
@@ -80,6 +81,7 @@ export default function Boxplosive() {
     ]
     return (
         <div>
+            <BackNavigator />
             <Projectcomponent
                 title="Boxplosive"
                 projectname="NFTs in loyalty programs"

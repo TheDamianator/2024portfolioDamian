@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './HomePage';
-import Navigation from "./Navigation";
 import Jumbo from "./Jumbo";
 import Boxplosive from "./Boxplosive";
 import LDR from "./LDR";
@@ -16,7 +15,7 @@ function App() {
    <div className="hero">
       <BrowserRouter>
       <AdaptiveScroll />
-        <Navigation/>
+        
                     <AnimatedCursor
               innerSize={8}
               outerSize={35}

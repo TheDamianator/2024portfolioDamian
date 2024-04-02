@@ -1,6 +1,7 @@
 import React from "react";
 import Projectcomponent from "./component/Projectcomponent";
 import ldrheader from "./assets/ldrheader.png";
+import BackNavigator from "./BackNavigator";
 
 export default function LDR() {
     const processSteps = [
@@ -25,6 +26,7 @@ export default function LDR() {
 
     return (
         <div>
+            <BackNavigator />
             <Projectcomponent
                 title="The LDR Project"
                 projectname="Long Distance Relationship Game"

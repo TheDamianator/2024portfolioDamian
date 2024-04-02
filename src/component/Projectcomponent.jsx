@@ -1,12 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import '../index.css';
+import leftArrowImage from "../assets/leftarrow.png"; // Import the left arrow image
 
 function ProjectComponent(props) {
   return (
     <>
-      <section className="flex flex-col md:flex-row justify-center gap-5 ml-5 mr-10 md:ml-20 md:mr-20"> {/* Adjusted spacing and alignment */}
+     
+      
+      <section className="flex flex-col md:flex-row justify-center gap-5 ml-5 mr-10 md:ml-20 md:mr-20"> 
+
+        
+        
+      
         <div className="flex flex-col gap-3 pr-5 md:pr-40 pt-5 md:pt-20 w-full md:w-[50%]"> {/* Adjusted spacing and width */}
-          <h1 className="w-full text-stone-700 text-2xl md:text-[65px] font-black leading-[66px]" style={{ fontFamily: 'Overused Grotesk' }}>{props.title}</h1>
+          {/* Project Title */}
+
+          
+
+          <div className="relative">
+            <h1 className="w-full text-stone-700 text-2xl md:text-[65px] font-black leading-[66px]" style={{ fontFamily: 'Overused Grotesk' }}>{props.title}</h1>
+            
+          </div>
+          {/* Project Name and Description */}
           <h3 className="w-full text-stone-900 text-lg md:text-[30px] font-normal leading-[46px]" style={{ fontFamily: 'Overused Grotesk' }}>
             {props.projectname} 
           </h3>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Fade } from 'react-reveal';
 
 import Jumbo from "./assets/projects/Jumbo.png";
 import Boxplosive from "./assets/projects/Boxplosive.png";
@@ -21,8 +20,8 @@ export default function Projects() {
     { 
       title: "Boxplosive", 
       image: Boxplosive, 
-      url: "https://google.com", 
-      description: "During my first internship, i was tasked to explore the use of non-fungible tokens (NFTs) in the company's existing app, who supplies loyalty programs to companies such as Etos, Blokker and more." ,
+      url: "/Boxplosive", 
+      description: "Internship focused on exploring the use of NFTs in loyalty programs." ,
       btn1: "Design",
       btn2: "Development",
       btn3: "Boxplosive"
@@ -30,7 +29,7 @@ export default function Projects() {
     { 
       title: "The LDR Project", 
       image: LDR, 
-      url: "#", 
+      url: "/LDR", 
       description: "A.I Based story telling game that goes through the hardships that make a long distance relationship work." ,
       btn1: "Design",
       btn2: "A.I",

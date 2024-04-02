@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from './HomePage';
 import Navigation from "./Navigation";
 import Jumbo from "./Jumbo";
+import Boxplosive from "./Boxplosive";
+import LDR from "./LDR";
 import AnimatedCursor from "react-animated-cursor";
 import AdaptiveScroll from "react-adaptive-scroll";
 
@@ -32,6 +34,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/Jumbo" element={<Jumbo />} />
+          <Route path="/Boxplosive" element={<Boxplosive />} />
+          <Route path="/LDR" element={<LDR />} />
         
         </Routes>
       </BrowserRouter>

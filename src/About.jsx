@@ -16,11 +16,14 @@ import canva from "./assets/canva.png";
 // import { Fade } from 'react-reveal';
 
 
-const stackImages = [
+const stackImages1 = [
     { src: html, alt: "HTML5" },
     { src: css, alt: "CSS3" },
     { src: js, alt: "JavaScript" },
     { src: react, alt: "React" },
+];
+const stackImages2 = [
+
     { src: vue, alt: "Vue.js" },
     { src: blazor, alt: "Blazor" },
     { src: wordpress, alt: "Wordpress" },
@@ -43,14 +46,27 @@ export default function About() {
                 <div className="bg-secondarygreen h-screen font-custom font-bold flex justify-center items-center relative">
                     <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-center items-center">
                         <div className="font-display text-left px-8 max-w-md">
-                            <p className="text-7xl  text-lightertext mb-12">ABOUT ME</p>
+                            <p className="text-xl  text-lightertext mb-12">ABOUT ME</p>
                             <div className="mb-6">
                                 <p className="text-m text-lightertext mb-6">Welcome to my portfolio! I'm passionate about crafting exceptional web experiences that not only look stunning but also deliver seamless functionality. Below, you'll find a showcase of my expertise, my coding and the design tools I use to sculpt great experiences.</p>
                             </div>
                             <div className="mb-8">
                                 <p className="text-3xl text-lightertext mb-4">Check out my stack!</p>
                                 <div className="flex">
-                                    {stackImages.map((img, index) => (
+                                    {stackImages1.map((img, index) => (
+                                        <div key={index} className="relative">
+                                            <img
+                                                src={img.src}
+                                                alt={img.alt}
+                                                className="w-12 h-12 mr-4 transition-transform duration-300 transform hover:scale-115"
+                                                // style={{ filter: "brightness(30%) saturate(0%) invert(15%) sepia(100%) hue-rotate(80deg) contrast(125%)" }}
+                                            />
+                                            <span className="absolute opacity-0 bg-white text-black px-2 py-1 rounded-md z-10 text-sm transition-opacity duration-300 hover:opacity-100 top-10 left-0 transform -translate-y-full">{img.alt}</span>
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="flex">
+                                    {stackImages2.map((img, index) => (
                                         <div key={index} className="relative">
                                             <img
                                                 src={img.src}

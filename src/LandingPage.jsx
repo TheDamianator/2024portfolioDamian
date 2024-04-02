@@ -25,7 +25,7 @@ export default function LandingPage() {
           <img
             src={circleImage}
             alt=""
-            className="md:hidden absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/5 w-4/6 opacity-100 z-0"
+            className="md:hidden absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/5 w-4/6 opacity-100 z-1"
           />
  
           <img

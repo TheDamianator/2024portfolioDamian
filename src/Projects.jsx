@@ -21,7 +21,7 @@ export default function Projects() {
     { 
       title: "Boxplosive", 
       image: Boxplosive, 
-      url: "#", 
+      url: "google.com", 
       description: "During my first internship, i was tasked to explore the use of non-fungible tokens (NFTs) in the company's existing app, who supplies loyalty programs to companies such as Etos, Blokker and more." ,
       btn1: "Design",
       btn2: "Development",

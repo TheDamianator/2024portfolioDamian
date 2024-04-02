@@ -4,63 +4,47 @@ import '../index.css';
 function ProjectComponent(props) {
   return (
     <>
-    <section className="flex justify-center gap-52 ml-20">
-      <div className="flex flex-col gap-7 pr-40  pt-20">
-        <h1 className="w-[563px] text-stone-700 text-[65px] font-black font-['Overused Grotesk'] leading-[66px]">{props.title}</h1>
-        <h3 className="w-[540px] text-stone-900 text-[30px] font-normal font-['Overused Grotesk'] leading-[46px]">
-          {props.projectname} 
-        </h3>
-        <p className="w-[540px] text-stone-900 text-[30px] font-normal font-['Overused Grotesk'] leading-[46px]">{props.description}</p>
+      <section className="flex flex-col md:flex-row justify-center gap-5 ml-5 mr-10 md:ml-20 md:mr-20"> {/* Adjusted spacing and alignment */}
+        <div className="flex flex-col gap-3 pr-5 md:pr-40 pt-5 md:pt-20 w-full md:w-[50%]"> {/* Adjusted spacing and width */}
+          <h1 className="w-full text-stone-700 text-2xl md:text-[65px] font-black leading-[66px]" style={{ fontFamily: 'Overused Grotesk' }}>{props.title}</h1>
+          <h3 className="w-full text-stone-900 text-lg md:text-[30px] font-normal leading-[46px]" style={{ fontFamily: 'Overused Grotesk' }}>
+            {props.projectname} 
+          </h3>
+          <p className="w-full text-stone-900 text-lg md:text-[30px] font-normal leading-[46px]" style={{ fontFamily: 'Overused Grotesk' }}>{props.description}</p>
 
-        <div className="flex gap-4 items-center"> {/* Wrap the "SEE WORK" link */}
-          <a className="w-[140px] h-[30px] bg-black rounded-full border border-neutral-950 items-center justify-center inline-flex text-white" href={props.link}>SEE WORK</a>
+          <div className="flex gap-4 items-center"> {/* Wrap the "SEE WORK" link */}
+            <a className="w-[140px] h-[30px] bg-black rounded-full border border-neutral-950 items-center justify-center inline-flex text-white text-sm md:text-base" href={props.link} style={{ fontFamily: 'Overused Grotesk' }}>SEE WORK</a>
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-col items-center justify-center gap-2 pt-20"> {/* Wrap the image and buttons */}
-        <img className="w-2/3" src={props.heroimg} alt="Project Hero Image" />
-        <div className="flex space-x-2 mt-2 justify-end"> {/* New container for the buttons */}
-          <div className="rounded-lg p-1 text-xs border border-gray-400">{props.btn1}</div>
-          <div className="rounded-lg p-1 text-xs border border-gray-400">{props.btn2}</div>
-          <div className="rounded-lg p-1 text-xs bg-secondarygreen border border-secondarygreen text-white">{props.btn3}</div>
-        </div>
-      </div>
-    </section>
-  
-
-    <section >
-        <div className="process-section flex flex-col pl-20">
-
-          {props.processSteps && props.processSteps.map((step, index) => (
-            <div key={index}>
-              <br />
-              <p className="w-1/2">{step.text}</p> <br />
-              {step.image && (
-               <img src={step.image} alt={`Step ${index}`} />
-
-              )}
-              {step.images && (
-                <div className="image-container">
-                  {step.images.map((image, i) => (
-                 <img key={i} src={image} alt={`Step ${index} Image ${i}`} />
-
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+        <div className="flex flex-col items-center justify-center gap-2 pt-5 md:pt-20 w-full md:w-[50%]"> {/* Adjusted spacing and width */}
+          <img className="w-full md:max-w-[600px]" src={props.heroimg} alt="Project Hero Image" /> {/* Adjusted image width */}
+          <div className="flex flex-wrap gap-2 mt-2 justify-end w-full"> {/* Wrap the buttons and adjust spacing */}
+            <div className="rounded-lg p-2 text-sm md:text-base border border-gray-400" style={{ fontFamily: 'Overused Grotesk' }}>{props.btn1}</div> {/* Adjusted button size and font */}
+            <div className="rounded-lg p-2 text-sm md:text-base border border-gray-400" style={{ fontFamily: 'Overused Grotesk' }}>{props.btn2}</div> {/* Adjusted button size and font */}
+            <div className="rounded-lg p-2 text-sm md:text-base bg-secondarygreen border border-secondarygreen text-white" style={{ fontFamily: 'Overused Grotesk' }}>{props.btn3}</div> {/* Adjusted button size and font */}
+          </div>
         </div>
       </section>
 
-
-
-
-
-
-
-
-
-
+      <section className="process-section mr-10 flex flex-col pl-5 md:pl-20"> {/* Adjusted padding */}
+        {props.processSteps && props.processSteps.map((step, index) => (
+          <div key={index}>
+            <br />
+            <p className="w-full " style={{ fontFamily: 'Overused Grotesk' }}>{step.text}</p> <br />
+            {step.image && (
+              <img src={step.image} alt={`Step ${index}`} />
+            )}
+            {step.images && (
+              <div className="image-container flex flex-wrap"> {/* Adjusted container */}
+                {step.images.map((image, i) => (
+                  <img key={i} src={image} alt={`Step ${index} Image ${i}`} className="w-full md:w-1/2" /> 
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </section>
     </>
   );
 }

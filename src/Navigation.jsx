@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../public/logo.png";
 
 export default function Navigation() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,7 +13,8 @@ export default function Navigation() {
     };
 
     return (
-        <div className="fixed top-2 right-2 z-50">
+        <div className="fixed top-2 right-2 z-50 flex items-center">
+           
             {/* Hamburger menu icon */}
             <button className="block md:hidden text-NewColorNav hover:text-NewColorNav focus:outline-none" onClick={toggleMobileMenu}>
                 <svg className="h-8 w-8 fill-current" viewBox="0 0 24 24">

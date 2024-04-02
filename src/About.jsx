@@ -1,5 +1,5 @@
 import React from "react";
-import portraitImage from "./assets/damian.jpeg"; // Import your portrait image
+import portraitImage from "./assets/damian2.jpg"; // Import your portrait image
 import html from "./assets/html5.png";
 import css from "./assets/css.png";
 import js from "./assets/js.png";

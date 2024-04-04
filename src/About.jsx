@@ -57,7 +57,7 @@ export default function About() {
                         
                         <Fade fraction={0.1}>
                         <div className="mb-6">
-                            <p className="text-sm text-lightertext mb-6">
+                            <p className="text-m text-lightertext mb-6">
                                 Welcome! I'm Damian Caelen and I'm passionate about crafting exceptional web experiences that not only look stunning but also deliver seamless functionality.
                                 <br/> <br/>
                                 Born and raised in the Netherlands, I have a big passion for design and technology. I'm currently studying Frontend Development at Fontys University of Applied Sciences in Eindhoven.
@@ -126,15 +126,7 @@ export default function About() {
                                 </div>
                             </Fade>
                             </div>
-                            <Fade direction="up" fraction={0.1}>
-                            <div className="mb-8">
-                                <a href="./assets/resume.pdf" download>
-                                    <button className="bg-white hover:bg-gray-200 text-accentgreen-dark font-bold py-2 px-4 border border-gray-300 rounded-full transition-colors duration-300">
-                                        Download my resume!
-                                    </button>
-                                </a>
-                            </div>
-                            </Fade>
+                            
                         </div>
                     </div>
                     <Fade fraction={0.1}>

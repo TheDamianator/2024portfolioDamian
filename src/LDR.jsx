@@ -1,5 +1,5 @@
 import React from "react";
-import Projectcomponent from "./component/Projectcomponent";
+import Projectcomponent from "./Projectcomponent";
 import ldrheader from "./assets/ldrheader.png";
 import BackNavigator from "./BackNavigator";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Projectcomponent from "./component/Projectcomponent";
+import Projectcomponent from "./Projectcomponent";
 import jumboheader from "./assets/jumboheader.png"
 import BackNavigator from "./BackNavigator";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
-import '../index.css';
-import leftArrowImage from "../assets/leftarrow.png"; // Import the left arrow image
+import './index.css';
+import leftArrowImage from "./assets/leftarrow.png"; // Import the left arrow image
 
 function ProjectComponent(props) {
   return (

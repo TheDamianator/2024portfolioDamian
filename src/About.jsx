@@ -105,7 +105,7 @@ export default function About() {
                                 </div>
                             </Fade>
                             </div>
-                            <div className="mb-8">
+                            <div className="mb-14">
                             <Fade fraction={0.1}>
                                 <p className="text-2xl text-lightertext mb-4">The tools I use daily</p>
 

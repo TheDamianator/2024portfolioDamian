@@ -28,7 +28,7 @@ export default function Contact() {
                 <h1 className="text-5xl sm:text-9xl text-lightertext mb-4">GET IN TOUCH</h1>
             </Fade>
             <Fade fraction={0.1}>
-                <h2 className="text-4xl sm:text-6xl text-lightertext mb-4">Let's stay in CONTACT</h2>
+                <h2 className="text-3xl sm:text-6xl text-lightertext mb-4">Let's stay in CONTACT</h2>
             </Fade>
                 <div className="text-left mb-8 flex flex-col items-center"> {/* Center vertically */}
                     <a href="mailto:damiancaelen@gmail.com" className="text-lg sm:text-xl text-NewColorNav mt-10 mb-2">

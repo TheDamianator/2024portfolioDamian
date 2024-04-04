@@ -56,15 +56,17 @@ export default function About() {
                         </Fade>
                         
                         <Fade fraction={0.1}>
-                            <div className="mb-6">
-                            <p className="text-m text-lightertext mb-6">Welcome! I'm Damian Caelen and I'm passionate about crafting exceptional web experiences that not only look stunning but also deliver seamless functionality.
-                            <br/> <br/>
-                            Born and raised in the Netherlands, I have a big passion for design and technology. I'm currently studying Frontend Development at Fontys University of Applied Sciences in Eindhoven.
-                            <br/> <br/>
-                            Below, you'll find a showcase of my expertise, my coding and the design tools I use to sculpt great experiences.
+                        <div className="mb-6">
+                            <p className="text-sm text-lightertext mb-6">
+                                Welcome! I'm Damian Caelen and I'm passionate about crafting exceptional web experiences that not only look stunning but also deliver seamless functionality.
+                                <br/> <br/>
+                                Born and raised in the Netherlands, I have a big passion for design and technology. I'm currently studying Frontend Development at Fontys University of Applied Sciences in Eindhoven.
+                                <br/> <br/>
+                                Below, you'll find a showcase of my expertise, my coding, and the design tools I use to sculpt great experiences.
                             </p>
-                            </div>
-                        </Fade>
+                        </div>
+                         </Fade>
+
                        
                             <div className="mb-8">
                          <Fade fraction={0.1}>

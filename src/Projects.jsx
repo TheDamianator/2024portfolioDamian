@@ -42,7 +42,7 @@ export default function Projects() {
   return (
     <div id="projects" className="bg-primarywhite min-h-screen font-custom font-bold flex flex-col justify-center items-center relative">
       <Fade fraction={0.1}>
-        <h1 className="text-7xl p-5 text-accentbrown mb-8">PROJECTS</h1>
+        <h1 className="text-6xl p-5 text-accentbrown mb-8">PROJECTS</h1>
       </Fade>
       
       <div className="grid pb-10 gap-4 mx-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

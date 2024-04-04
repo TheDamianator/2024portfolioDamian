@@ -31,10 +31,10 @@ export default function Contact() {
                 <h2 className="text-4xl sm:text-6xl text-lightertext mb-4">Let's stay in CONTACT</h2>
             </Fade>
                 <div className="text-left mb-8 flex flex-col items-center"> {/* Center vertically */}
-                    <a href="mailto:damiancaelen@gmail.com" className="text-lg sm:text-xl text-primarywhite mt-10 mb-2">
+                    <a href="mailto:damiancaelen@gmail.com" className="text-lg sm:text-xl text-NewColorNav mt-10 mb-2">
                         damiancaelen@gmail.com
                     </a> <br></br>
-                    <a href="https://www.linkedin.com/in/damian-caelen-970a8a174/" className="text-lg mt-10 sm:text-xl text-primarywhite hover:underline">
+                    <a href="https://www.linkedin.com/in/damian-caelen-970a8a174/" className="text-lg mt-10 sm:text-xl text-NewColorNav hover:underline">
                      
                         linkedin.com/damiancaelen
                     </a>

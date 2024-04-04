@@ -16,15 +16,12 @@ export default function LandingPage() {
             <p className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-9xl text-accentbrown z-10 mb-6">
               HI THERE, I'M <br /> DAMIAN CAELEN.
             </p>
-          </Fade>
+        </Fade>
           <Fade fraction={0.1}>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl text-accentbrown flex justify-center items-center z-10">
-              Born and raised in the Netherlands, I am a dedicated student
-              of UI/UX design, fluent in English, and driven by a
-              profound passion for crafting seamless digital experiences
-              through code.
+            A student frontend developer & web designer, skilled in UI and UX principles, turning visions to reality. Take a look through my portfolio and let's work together!
             </p>
-            </Fade>
+          </Fade>
           </div>
 
           <img
@@ -39,7 +36,7 @@ export default function LandingPage() {
             className="hidden md:block absolute top-1/5 left-1/2 transform -translate-x-1/2 w-1/3 opacity-100 z-0"
           />
         </div>
-        </Fade>
+      </Fade>
       </div>
     </>
   );

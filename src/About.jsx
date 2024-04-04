@@ -52,12 +52,17 @@ export default function About() {
                     <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-center items-center">
                         <div className="font-display text-left px-8 max-w-md">
                         <Fade  fraction={0.1}>
-                            <p className="text-xl  text-lightertext mb-12">ABOUT ME</p>
+                            <p className="text-xl pt-2 text-lightertext mb-12">ABOUT ME</p>
                         </Fade>
                         
                         <Fade fraction={0.1}>
                             <div className="mb-6">
-                                <p className="text-m text-lightertext mb-6">Welcome to my portfolio! I'm passionate about crafting exceptional web experiences that not only look stunning but also deliver seamless functionality. Below, you'll find a showcase of my expertise, my coding and the design tools I use to sculpt great experiences.</p>
+                            <p className="text-m text-lightertext mb-6">Welcome! I'm Damian Caelen and I'm passionate about crafting exceptional web experiences that not only look stunning but also deliver seamless functionality.
+                            <br/> <br/>
+                            Born and raised in the Netherlands, I have a big passion for design and technology. I'm currently studying Frontend Development at Fontys University of Applied Sciences in Eindhoven.
+                            <br/> <br/>
+                            Below, you'll find a showcase of my expertise, my coding and the design tools I use to sculpt great experiences.
+                            </p>
                             </div>
                         </Fade>
                        
@@ -79,6 +84,7 @@ export default function About() {
                                         </div>
                                     ))}
                                 </div>
+                                <br/>
                             </Fade>
                             <Fade fraction={0.1}>
                                 <div className="flex">

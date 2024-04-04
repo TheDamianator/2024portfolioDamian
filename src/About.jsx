@@ -70,7 +70,7 @@ export default function About() {
                        
                             <div className="mb-8">
                          <Fade fraction={0.1}>
-                                <p className="text-3xl text-lightertext mb-4">Check out my stack!</p>
+                                <p className="text-2xl text-lightertext mb-4">Check out my stack!</p>
                          </Fade>
                          <Fade fraction={0.1}>
                                 <div className="flex">
@@ -107,7 +107,7 @@ export default function About() {
                             </div>
                             <div className="mb-8">
                             <Fade fraction={0.1}>
-                                <p className="text-3xl text-lightertext mb-4">The tools I use daily</p>
+                                <p className="text-2xl text-lightertext mb-4">The tools I use daily</p>
 
                             </Fade>
                             <Fade fraction={0.1}>

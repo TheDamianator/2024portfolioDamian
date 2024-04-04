@@ -52,7 +52,7 @@ export default function About() {
                     <div className="w-full md:w-2/3 lg:w-1/2 flex flex-col justify-center items-center">
                         <div className="font-display text-left px-8 max-w-md">
                         <Fade  fraction={0.1}>
-                            <p className="text-xl pt-2 text-lightertext mb-12">ABOUT ME</p>
+                            <p className="text-xl pt-2 text-lightertext mb-4">ABOUT ME</p>
                         </Fade>
                         
                         <Fade fraction={0.1}>

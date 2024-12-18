@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import { Fade } from "react-awesome-reveal";
 
 export default function Contact() {
@@ -16,6 +15,13 @@ export default function Contact() {
     return () => clearInterval(interval);
   }, []);
 
+  const handleDownload = (fileName) => {
+    const link = document.createElement("a");
+    link.href = `/${fileName}`;
+    link.download = fileName;
+    link.click();
+  };
+
   return (
     <div
       id="contact"
@@ -29,28 +35,29 @@ export default function Contact() {
           <h2 className="text-3xl sm:text-6xl text-lightertext mb-4">Let's stay in CONTACT</h2>
         </Fade>
         <div className="text-left mb-8 flex flex-col items-center">
-          {" "}
           {/* Center vertically */}
           <a href="mailto:damiancaelen@gmail.com" className="text-lg sm:text-xl text-NewColorNav mt-10 mb-2">
             damiancaelen@gmail.com
-          </a>{" "}
+          </a>
           <a
             href="https://www.linkedin.com/in/damian-caelen-970a8a174/"
-            className="text-lg  sm:text-xl text-NewColorNav hover:underline"
+            className="text-lg sm:text-xl text-NewColorNav hover:underline"
           >
             linkedin.com/damiancaelen
           </a>
           <br /> <br />
-          <a href="/public/DamianCaelen.pdf" download className="text-lg  sm:text-xl text-NewColorNav hover:underline">
+          <button
+            onClick={() => handleDownload("DamianCaelen.pdf")}
+            className="text-lg sm:text-xl text-NewColorNav hover:underline"
+          >
             CV Nederlands
-          </a>
-          <a
-            href="/public/DamianCaelenEN.pdf"
-            download
-            className="text-lg  sm:text-xl text-NewColorNav hover:underline"
+          </button>
+          <button
+            onClick={() => handleDownload("DamianCaelenEN.pdf")}
+            className="text-lg sm:text-xl text-NewColorNav hover:underline"
           >
             Resume English
-          </a>
+          </button>
         </div>
       </div>
 

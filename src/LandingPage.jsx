@@ -16,8 +16,8 @@ export default function LandingPage() {
               </Fade>
               <Fade fraction={0.1}>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl text-accentbrown flex justify-center items-center z-10">
-                  A frontend developer & web designer, skilled in UI and UX principles, turning visions to reality. Take
-                  a look through my portfolio and let's work together!
+                  A Dutch frontend developer & web designer, skilled in UI and UX principles, turning visions to
+                  reality. Take a look through my portfolio and let's work together!
                 </p>
               </Fade>
             </div>

@@ -48,7 +48,7 @@ export default function IOInternship() {
           <br />
           <span className="font-bold text-lg md:text-xl">The Results</span>
           <br />
-          <div className="flex gap-10">
+          <div className="flex flex-wrap gap-10">
             <img src={UserSurvey} alt="Survey Results" className="w-2/3 md:w-1/5 rounded-lg" />
             <img src={UserSurvey2} alt="Survey Results" className="w-2/3 md:w-1/5 rounded-lg" />
             <img src={UserSurvey3} alt="Survey Results" className="w-2/3 md:w-1/5 rounded-lg" />

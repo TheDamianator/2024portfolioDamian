@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Jumbo from "./assets/projects/Jumbo.png";
 import Boxplosive from "./assets/projects/Boxplosive.png";
 import LDR from "./assets/projects/LDR.png";
-import IO from "./assets/projects/Internship_Impression.png";
+import IO from "./assets/projects/3.png";
 
 import { Fade } from "react-awesome-reveal";
 
@@ -11,6 +11,17 @@ export default function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const projects = [
+    {
+      title: "iO Survey Tool",
+      image: IO,
+      url: "/IO",
+      description:
+        "Graduation Internship where I created a survey tool for project managers to gather feedback from their teams.",
+      btn1: "Design",
+      btn2: "A.I",
+      btn3: "iO Digital Agency",
+      btn4: "Newest!",
+    },
     {
       title: "Jumbo",
       image: Jumbo,
@@ -38,16 +49,6 @@ export default function Projects() {
       btn1: "Design",
       btn2: "A.I",
       btn3: "Storytelling",
-    },
-    {
-      title: "iO Survey Tool",
-      image: IO,
-      url: "/IO",
-      description:
-        "Graduation Internship where I created a survey tool for project managers to gather feedback from their teams.",
-      btn1: "Design",
-      btn2: "A.I",
-      btn3: "iO Digital Agency",
     },
   ];
 
@@ -84,6 +85,11 @@ export default function Projects() {
                       <div className="rounded-lg p-1 text-xs text-lightertext bg-secondarygreen border border-secondarygreen">
                         {project.btn3}
                       </div>
+                      {project.btn4 && (
+                        <div className="rounded-lg text-[white] p-1 text-xs bg-[#2730e0] border border-[#dcdcdc]">
+                          {project.btn4}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
